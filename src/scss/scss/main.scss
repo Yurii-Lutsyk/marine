@@ -1,0 +1,25 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+@import "middle.scss";
+
+html{
+	line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+	height: 100%
+}
+
+@media screen and (max-width: $desktopWidth) {
+
+}
+
+@media screen and (max-width: $tableWidth) {
+
+}
+
+@media screen and (max-width: $phoneWidth) {
+
+}

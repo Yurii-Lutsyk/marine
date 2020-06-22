@@ -1,0 +1,498 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='../node_modules/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='../node_modules/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='app.css')
+    title Marine
+  body
+    //
+      HEADER
+    header.header
+      .container.header__inner
+        .row
+          .col-xl-3.col-lg-3.col-md-3.col-sm-12.d-flex.justify-content-center
+            .header__logo
+              img.header__logo__img(src='src/img/Shape_Logo.png', alt='Logo')
+              h2.header__title Marine
+          .col-xl-5.offset-xl-4.col-lg-6.offset-lg-3.col-md-8.offset-md-1.col-sm-10.d-flex.justify-content-center
+            .social
+              a.social__phone.link(href='') Call Us: +1 800 450 17 04 
+              a.social__link.link.icon(href='https://uk-ua.facebook.com/')
+                i.fa.fa-facebook(aria-hidden='true')
+              a.social__link.link.icon(href='https://twitter.com/explore')
+                i.fa.fa-twitter(aria-hidden='true')
+              a.social__link.link.icon(href='https://www.skype.com/ru/')
+                i.fa.fa-skype(aria-hidden='true')
+              a.social__link.link.icon(href='https://www.google.com/search?q=google&oq=goo&aqs=chrome.3.69i57j35i39j46j0l3j69i60j69i65.9062j0j4&sourceid=chrome&ie=UTF-8')
+                i.fa.fa-google(aria-hidden='true')
+              a.social__link.link.icon(href='https://vimeo.com/')
+                i.fa.fa-vimeo(aria-hidden='true')
+              a.social__link.link.icon(href='https://www.linkedin.com/')
+                i.fa.fa-linkedin(aria-hidden='true')
+              a.social__link.link.icon(href='https://www.instagram.com/')
+                i.fa.fa-instagram(aria-hidden='true')
+      // header__footer
+      .header__footer
+        .container
+          .row
+            .col-xl-5.col-lg-6.col-md-8.col-sm-11.col-11
+              .nav
+                a.nav__link.link(href='') Home
+                a.nav__link.link(href='') Blog
+                a.nav__link.link(href='') Gallery
+                a.nav__link.link(href='') Pages
+                a.nav__link.link(href='') Contacts
+            .col-xl-2.offset-xl-5.col-lg-2.offset-lg-4.col-md-2.col-sm-1.col-1.text-right
+              .search
+                i.search__link.link.icon.fa.fa-search(aria-hidden='true')
+                .search__form
+                  form
+                    input(type='text', placeholder='Search...')
+                    button(type='submit')
+                .reactangle__reverse
+    // section__slider
+    section.section__slider
+      .slider
+        .slider__item
+          img(src='src/img/ship_slider.png', alt='Slider')
+          h2.slider__title Natural Power
+          p.slider__text vivamus orci sem, consectetur ut vestibulum.
+        .slider__item
+          img(src='src/img/ship_slider.png', alt='Slider')
+          h2.slider__title Natural Power
+          p.slider__text vivamus orci sem, consectetur ut vestibulum.
+    // section__features
+    section.section__features
+      .container
+        .row
+          .col-xl-3.col-lg-3.col-md-6.col-sm-6.features__item
+            img.features__icon(src='src/img/feature-1.png', alt='Web Development')
+            p.features__title
+              | Web development
+            p.features__text
+              | IT WAS HARD TO MAKE IT SO COOL
+          .col-xl-3.col-lg-3.col-md-6.col-sm-6.features__item
+            img.features__icon(src='src/img/feature-2.png', alt='SEO Monitoting')
+            p.features__title
+              | SEO Monitoting
+            p.features__text
+              | IT WAS HARD TO MAKE IT SO COOL
+          .col-xl-3.col-lg-3.col-md-6.col-sm-6.features__item
+            img.features__icon(src='src/img/feature-3.png', alt='Network Communities')
+            p.features__title
+              | Network Communities
+            p.features__text
+              | IT WAS HARD TO MAKE IT SO COOL
+          .col-xl-3.col-lg-3.col-md-6.col-sm-6.features__item
+            img.features__icon(src='src/img/feature-4.png', alt='Web analytics')
+            p.features__title
+              | Web analytics
+            p.features__text
+              | IT WAS HARD TO MAKE IT SO COOL
+    // section__projects
+    section.section__projects
+      .container-fluid
+        .row
+          .col-xl-12.multiSlider__padding
+            h3.recent__title
+              | Recent Projects
+            .recent__text
+              p
+                | Morbi a libero eget erat auctor cursus vitae id tortor. Suspendisse rhoncus. Vestibulum eu ligula lorem.
+                | Vivamus orci sem, consectetur ut vestibulum a, semper ac dui.
+            .multiSlider
+              .multiSlider__container
+                .multiSlider__item.multi__padding
+                  .multiSlider__link
+                  .multiSlider__search
+                  img(src='src/img/recent_slider.png', alt='Slider')
+                  .multiSlider__describe
+                    .multiSlider__text
+                      h5.multiSlider__text__title
+                        | Project Title
+                      p Graphic design
+                    .like
+                      i.fa.fa-heart-o(aria-hidden='true')
+                  .reactangle
+                .multiSlider__item.multi__padding
+                  .multiSlider__link
+                  .multiSlider__search
+                  img(src='src/img/recent_slider.png', alt='Slider')
+                  .multiSlider__describe
+                    .multiSlider__text
+                      h5.multiSlider__text__title
+                        | Project Title
+                      p Graphic design
+                    .like
+                      i.fa.fa-heart-o(aria-hidden='true')
+                  .reactangle
+                .multiSlider__item.multi__padding
+                  .multiSlider__link
+                  .multiSlider__search
+                  img(src='src/img/recent_slider.png', alt='Slider')
+                  .multiSlider__describe
+                    .multiSlider__text
+                      h5.multiSlider__text__title
+                        | Project Title
+                      p Graphic design
+                    .like
+                      i.fa.fa-heart-o(aria-hidden='true')
+                  .reactangle
+                .multiSlider__item.multi__padding
+                  .multiSlider__link
+                  .multiSlider__search
+                  img(src='src/img/recent_slider.png', alt='Slider')
+                  .multiSlider__describe
+                    .multiSlider__text
+                      h5.multiSlider__text__title
+                        | Project Title
+                      p Graphic design
+                    .like
+                      i.fa.fa-heart-o(aria-hidden='true')
+                  .reactangle
+    // call
+    section.call
+      .container
+        .row
+          .col-xl-9.col-lg-9
+            .call__text
+              span A fully responsive theme
+              | 						with clean design for your success!
+          .col-xl-3.col-lg-3
+            button.call__button Check Details
+    // post
+    section.post
+      .container
+        .row
+          .col-xl-6
+            h3.post__title
+              | Recent Posts
+            .post__article
+              .post__article__time
+                p
+                  | 15 
+                  small oct, 2013
+                img(src='src/img/post_photo.png', alt='Photo')
+              img(src='src/img/post_img.png', alt='PostImg')
+              .post__article__more
+                .post__article__more__nav
+                  a.post__link(href='') By Admin
+                  a.post__link(href='') Web, News
+                  a.post__link(href='') 5 Comments
+                  a.post__link(href='') Read More
+                h4 Vivamus orci sem, conse tur per ac dui oin vulputate.
+                p Proin vulputate aliquam mi nec hendrerit. Sed entum velit vel ipsum.
+            .post__article
+              .post__article__time
+                p
+                  | 23 
+                  small oct, 2013
+                img(src='src/img/video_photo.png', alt='Photo')
+              img(src='src/img/post_img.png', alt='PostImg')
+              .post__article__more
+                .post__article__more__nav
+                  a.post__link(href='') By Admin
+                  a.post__link(href='') Web, News
+                  a.post__link(href='') 5 Comments
+                  a.post__link(href='') Read More
+                h4 Vivamus orci sem, conse tur per ac dui oin vulputate.
+                p Proin vulputate aliquam mi nec hendrerit. Sed entum velit vel ipsum.
+          .col-xl-3
+            h3.post__title
+              | Accorden
+            .post__title__accordeon
+              .post__describe
+                i.fa.fa-minus(aria-hidden='true')
+                p.post__describe__text(style='color:#008fd5') Vivamus orci sem sectetur. 
+              p.post__describe__more(style='display:block')
+                | Sed entum velit vel ipsum bibendum em lacus, itor et aliquam eget, iaculis id lacus. Praesent tudin.
+                | Aiquam eget, iaculis id lacus. Praesent tudin. Ut sem lacus, ttitor putate uam mi nec hendrerit.
+            .post__title__accordeon
+              .post__describe
+                i.fa.fa-plus(aria-hidden='true')
+                p.post__describe__text Sed entum velit vel ipsum.  
+              p.post__describe__more(style='display:none')
+                | Sed entum velit vel ipsum bibendum em lacus, itor et aliquam eget, iaculis id lacus. Praesent tudin.
+                | Aiquam eget, iaculis id lacus. Praesent tudin. Ut sem lacus, ttitor putate uam mi nec hendrerit.
+            .post__title__accordeon
+              .post__describe
+                i.fa.fa-plus(aria-hidden='true')
+                p.post__describe__text Porttitor et aliquam eget. 
+              p.post__describe__more(style='display:none')
+                | Sed entum velit vel ipsum bibendum em lacus, itor et aliquam eget, iaculis id lacus. Praesent tudin.
+                | Aiquam eget, iaculis id lacus. Praesent tudin. Ut sem lacus, ttitor putate uam mi nec hendrerit.
+          .col-xl-3
+            .post__say
+              h3.post__title
+                | What People Say
+              .post__comment
+                img(src='src/img/comment.png', alt='post__comment')
+                .post__comment__title
+                  h5 Sarah Doe
+                  p Ceo, Company.Com
+              .post__comment__quite
+                h5 Vivamus orci sem, consectetur ut vestibulum a, semper ac dui. 
+                p
+                  | Proin vulputate aliquam mi nec rerit. Sed entum velit vel ipsum bibendum tristique. Ut sem lacus, ttitor putate liquam mi nec hendrerit.
+    // development
+    section.development
+      .container-fluid
+        .row
+          .col-6.multiSlider__padding.development__item__header
+            .development__img
+              img.development__big(src='src/img/development_big.png', alt='Big')
+              img.development__small(src='src/img/development_small.png', alt='Small')
+              img.development__keyboard(src='src/img/keyboard.png', alt='Keyboard')
+          .col-6.multiSlider__padding.development__item__section
+            .development__item
+              img.development__item__img(src='src/img/fixeble.png', alt='Fixeble')
+              h4.development__item__title Fixeble Solution
+              p.development__item__text
+                | Lorem ipsum dolor sit amet, 
+                strong tetur piscing
+                |  elit. Suspendisse smod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus.
+            .development__item
+              img.development__item__img(src='src/img/target.png', alt='Fixeble')
+              h4.development__item__title Target Approach
+              p.development__item__text
+                | Lorem ipsum dolor sit amet, 
+                strong tetur piscing
+                |  elit. Suspendisse smod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus.
+            .development__item
+              img.development__item__img(src='src/img/global.png', alt='Fixeble')
+              h4.development__item__title Global Development
+              p.development__item__text
+                | Lorem ipsum dolor sit amet, 
+                strong tetur piscing
+                |  elit. Suspendisse smod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus.
+    // team
+    section.team
+      .container
+        .row
+          h2.team__title
+            | Our Team
+        .row
+          .col-xl-3.col-lg-3.col-md-6.col-sm-6
+            .team__item
+              img.team__item__img(src='src/img/team_photo.png', alt='Team')
+              h3.team__item__name Sarah Doe 
+              p.team__item__ceo CEO
+              p.team__item__text
+                | Proin vulputate aliquam mi nec rerit. Sed entum velit vel ipsum bibendum tristique.
+              .team__item__text__underline
+              .social
+                a.social__link.link.icon(href='https://uk-ua.facebook.com/')
+                  i.fa.fa-facebook(aria-hidden='true')
+                a.social__link.link.icon(href='https://twitter.com/explore')
+                  i.fa.fa-twitter(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.skype.com/ru/')
+                  i.fa.fa-skype(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.google.com/search?q=google&oq=goo&aqs=chrome.3.69i57j35i39j46j0l3j69i60j69i65.9062j0j4&sourceid=chrome&ie=UTF-8')
+                  i.fa.fa-google(aria-hidden='true')
+                a.social__link.link.icon(href='https://vimeo.com/')
+                  i.fa.fa-vimeo(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.linkedin.com/')
+                  i.fa.fa-linkedin(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.instagram.com/')
+                  i.fa.fa-instagram(aria-hidden='true')
+          .col-xl-3.col-lg-3.col-md-6.col-sm-6
+            .team__item
+              img.team__item__img(src='src/img/team_photo.png', alt='Team')
+              h3.team__item__name Sarah Doe 
+              p.team__item__ceo CEO
+              p.team__item__text
+                | Proin vulputate aliquam mi nec rerit. Sed entum velit vel ipsum bibendum tristique.
+              .team__item__text__underline
+              .social
+                a.social__link.link.icon(href='https://uk-ua.facebook.com/')
+                  i.fa.fa-facebook(aria-hidden='true')
+                a.social__link.link.icon(href='https://twitter.com/explore')
+                  i.fa.fa-twitter(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.skype.com/ru/')
+                  i.fa.fa-skype(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.google.com/search?q=google&oq=goo&aqs=chrome.3.69i57j35i39j46j0l3j69i60j69i65.9062j0j4&sourceid=chrome&ie=UTF-8')
+                  i.fa.fa-google(aria-hidden='true')
+                a.social__link.link.icon(href='https://vimeo.com/')
+                  i.fa.fa-vimeo(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.linkedin.com/')
+                  i.fa.fa-linkedin(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.instagram.com/')
+                  i.fa.fa-instagram(aria-hidden='true')
+          .col-xl-3.col-lg-3.col-md-6.col-sm-6
+            .team__item
+              img.team__item__img(src='src/img/team_photo.png', alt='Team')
+              h3.team__item__name Sarah Doe 
+              p.team__item__ceo CEO
+              p.team__item__text
+                | Proin vulputate aliquam mi nec rerit. Sed entum velit vel ipsum bibendum tristique.
+              .team__item__text__underline
+              .social
+                a.social__link.link.icon(href='https://uk-ua.facebook.com/')
+                  i.fa.fa-facebook(aria-hidden='true')
+                a.social__link.link.icon(href='https://twitter.com/explore')
+                  i.fa.fa-twitter(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.skype.com/ru/')
+                  i.fa.fa-skype(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.google.com/search?q=google&oq=goo&aqs=chrome.3.69i57j35i39j46j0l3j69i60j69i65.9062j0j4&sourceid=chrome&ie=UTF-8')
+                  i.fa.fa-google(aria-hidden='true')
+                a.social__link.link.icon(href='https://vimeo.com/')
+                  i.fa.fa-vimeo(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.linkedin.com/')
+                  i.fa.fa-linkedin(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.instagram.com/')
+                  i.fa.fa-instagram(aria-hidden='true')
+          .col-xl-3.col-lg-3.col-md-6.col-sm-6
+            .team__item
+              img.team__item__img(src='src/img/team_photo.png', alt='Team')
+              h3.team__item__name Sarah Doe 
+              p.team__item__ceo CEO
+              p.team__item__text
+                | Proin vulputate aliquam mi nec rerit. Sed entum velit vel ipsum bibendum tristique.
+              .team__item__text__underline
+              .social
+                a.social__link.link.icon(href='https://uk-ua.facebook.com/')
+                  i.fa.fa-facebook(aria-hidden='true')
+                a.social__link.link.icon(href='https://twitter.com/explore')
+                  i.fa.fa-twitter(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.skype.com/ru/')
+                  i.fa.fa-skype(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.google.com/search?q=google&oq=goo&aqs=chrome.3.69i57j35i39j46j0l3j69i60j69i65.9062j0j4&sourceid=chrome&ie=UTF-8')
+                  i.fa.fa-google(aria-hidden='true')
+                a.social__link.link.icon(href='https://vimeo.com/')
+                  i.fa.fa-vimeo(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.linkedin.com/')
+                  i.fa.fa-linkedin(aria-hidden='true')
+                a.social__link.link.icon(href='https://www.instagram.com/')
+                  i.fa.fa-instagram(aria-hidden='true')
+    // clients
+    section.clients
+      .container
+        .row
+          .col-xl-3.text-center.col-lg-4.col-md-4.multiSlider__padding.clients__img
+            img(src='src/img/netcredit.png', alt='clients')
+          .col-xl-2.text-center.col-lg-4.col-md-4.multiSlider__padding.clients__img
+            img(src='src/img/padoo.png', alt='clients')
+          .col-xl-2.text-center.col-lg-4.col-md-4.multiSlider__padding.clients__img
+            img(src='src/img/foxter.png', alt='clients')
+          .col-xl-2.text-center.col-lg-4.col-md-4.multiSlider__padding.clients__img
+            img(src='src/img/counsel.png', alt='clients')
+          .col-xl-3.text-center.col-lg-4.col-md-4.multiSlider__padding.clients__img
+            img(src='src/img/kamcord.png', alt='clients')
+    // contacts
+    section.contacts
+      .container
+        .row
+          .col-xl-12
+            form.contacts__form.col-xl-6(action='#')
+              h2.contacts__title Get In Touch
+              .contacts__form__group
+                label.contacts__form__label.contacts__form__name Name*
+                input#name.contacts__form__name(type='text')
+              .contacts__form__group
+                label.contacts__form__label.contacts__form__email Email*
+                input#email.contacts__form__email(type='email')
+              .contacts__form__group
+                label.contacts__form__label.contacts__form__textarea Message
+                input#message.contacts__form__message(type='text')
+              button.contacts__form__send Send Message
+              button.contacts__form__clear Clear
+    // footer__slide
+    section.footer__slide
+      .container
+        .row
+          .col-xl-12
+            .footer__slide__shadow
+            .reactangle__left
+            .footer__slide__img
+              img(src='src/img/footer_slide.png', alt='Footer__Slide')
+            .footer__slider
+              .footer__slider__item
+                p.footer__slider__text
+                  span @circles
+                  |  Because we know you don’t want to be in both portrait AND landscape! We care about limited format ... 
+                  span by Quill
+                p.ago about 5 minutes ago
+              .footer__slider__item
+                p.footer__slider__text
+                  span @circles
+                  |  Because we know you don’t want to be in both portrait AND landscape! We care about limited format ... 
+                  span by Quill
+                p.ago about 5 minutes ago
+    // footer__us
+    section.footer__us
+      .container
+        .row.d-flex.justify-content-center
+          .col-xl-3.col-lg-3.col-md-5.col-sm-5.col-5
+            .footer__us__item
+              .footer__logo
+                img(src='src/img/Shape_Logo.png', alt='Logo')
+                h2.footer__title Marine
+              p.marine__text
+                | Vivamus orci sem, consectetur ut vestibulum a, mper ac dui. Aenean tellus nisl, commodo eu aliquet ut, pulvinar ut sapien. Proin tate aliquam mi nec hendrerit.
+          .col-xl-3.col-lg-3.col-md-5.col-sm-5.col-5
+            .footer__item
+              h3.footer__item__title Recent Rosts
+              .footer__item__describe
+                p dec 15, 2012  |  By admin
+                span Morbi a libero eget erat auctor. 
+                p
+                  | Sus vitae id tortor suspendisse stibulum eu igula lorem ivamus orci sem, ectetur. vestibulum.
+              .footer__item__describe
+                p dec 15, 2012  |  By admin
+                span Morbi a libero eget erat auctor. 
+                p
+                  | Sus vitae id tortor suspendisse stibulum eu igula lorem ivamus orci sem, ectetur. vestibulum.
+          .col-xl-3.col-lg-3.col-md-5.col-sm-5.col-5
+            h3.footer__item__title Contacts
+            .contacts__item
+              img.contacts__item__img(src='src/img/contacts_map.png', alt='Fixeble')
+              .contacts__item__text
+                p Phoenix Inc.
+                p PO Box 21177
+                p Little Lonsdale St, Melbourne 
+                p Victoria 8011 Australia 
+            .contacts__item
+              img.contacts__item__img(src='src/img/contacts_phone.png', alt='Fixeble')
+              .contacts__item__text
+                p Phone: (415) 124-5678 
+                p Fax: (415) 124-5678
+            .contacts__item
+              img.contacts__item__img(src='src/img/contacts_mail.png', alt='Fixeble')
+              .contacts__item__text
+                p support@yourname.com
+          .col-xl-3.col-lg-3.col-md-5.col-sm-5.col-6
+            h3.footer__item__title Newsletter Signup
+            p.newsletter__item__text
+              | By subscribing to our mailing list you will get the latest news from us.
+            input.newsletter__item__input(type='text')
+            h4.footer__item__title Follow Us
+            .social
+              a.social__link.link.icon(href='https://uk-ua.facebook.com/')
+                i.fa.fa-facebook(aria-hidden='true')
+              a.social__link.link.icon(href='https://twitter.com/explore')
+                i.fa.fa-twitter(aria-hidden='true')
+              a.social__link.link.icon(href='https://www.skype.com/ru/')
+                i.fa.fa-skype(aria-hidden='true')
+              a.social__link.link.icon(href='https://www.google.com/search?q=google&oq=goo&aqs=chrome.3.69i57j35i39j46j0l3j69i60j69i65.9062j0j4&sourceid=chrome&ie=UTF-8')
+                i.fa.fa-google(aria-hidden='true')
+              a.social__link.link.icon(href='https://vimeo.com/')
+                i.fa.fa-vimeo(aria-hidden='true')
+              a.social__link.link.icon(href='https://www.linkedin.com/')
+                i.fa.fa-linkedin(aria-hidden='true')
+              a.social__link.link.icon(href='https://www.instagram.com/')
+                i.fa.fa-instagram(aria-hidden='true')
+    // footer
+    footer.footer
+      .footer__text
+        .container
+          .row
+            .col-xl-12
+              p
+                | © 2013 Marine. All Rights Reserved
+    script(src='../node_modules/jquery/dist/jquery.min.js')
+    script(src='../node_modules/jcarousel/dist/jquery.jcarousel.min.js')
+    script(src='../node_modules/slick-slider/slick/slick.min.js')
+    script(src='app.js')

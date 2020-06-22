@@ -1,0 +1,38 @@
+{
+  "name": "marine_finish",
+  "version": "1.0.0",
+  "description": "Practica",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --config webpack.dev.conf.js",
+    "build": "webpack --config webpack.build.conf.js"
+  },
+  "author": "Lucik Yura",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "fs": "0.0.1-security",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "path": "^0.12.7",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass": "^1.26.8",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "file-loader": "^6.0.0",
+    "font-awesome": "^4.7.0",
+    "jcarousel": "^0.3.9",
+    "jquery": "^3.5.1",
+    "slick-slider": "^1.8.2",
+    "webpack-merge": "^4.2.2"
+  }
+}
