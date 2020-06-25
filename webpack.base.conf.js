@@ -13,7 +13,8 @@ const PAGES_DIR = `${PATHS.src}/pug`
 const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
 
 module.exports = {
-
+	
+	watch: true,
 	externals: {
 		paths: PATHS
 	},

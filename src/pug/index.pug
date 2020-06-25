@@ -2,7 +2,9 @@ doctype html
 html(lang='en')
   head
     meta(charset='UTF-8')
+    meta(name="viewport" content="width=device-width")
     link(href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' rel='stylesheet')
     link(rel='stylesheet', type='text/css', href='../node_modules/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='../node_modules/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='app.css')
@@ -13,11 +15,11 @@ html(lang='en')
     header.header
       .container.header__inner
         .row
-          .col-xl-3.col-lg-3.col-md-3.col-sm-12.d-flex.justify-content-center
+          .col-xl-3.col-lg-3.col-md-3.col-sm-4
             .header__logo
               img.header__logo__img(src='src/img/Shape_Logo.png', alt='Logo')
               h2.header__title Marine
-          .col-xl-5.offset-xl-4.col-lg-6.offset-lg-3.col-md-8.offset-md-1.col-sm-10.d-flex.justify-content-center
+          .col-xl-5.offset-xl-4.col-lg-6.offset-lg-3.col-md-9.col-sm-12.d-flex.justify-content-end
             .social
               a.social__phone.link(href='') Call Us: +1 800 450 17 04 
               a.social__link.link.icon(href='https://uk-ua.facebook.com/')
@@ -35,17 +37,35 @@ html(lang='en')
               a.social__link.link.icon(href='https://www.instagram.com/')
                 i.fa.fa-instagram(aria-hidden='true')
       // header__footer
+      .header__mobile
+        .header__burger
+          span
+        nav.header__menu
+          ul.header__list
+            li
+              a.nav__link.link(href='') Home
+            li
+              a.nav__link.link(href='') Blog
+            li
+              a.nav__link.link(href='') Gallery
+            li
+              a.nav__link.link(href='') Pages
+            li
+              a.nav__link.link(href='') Contacts
+            li
+              a
+                i.search__link.link.icon.fa.fa-search(aria-hidden='true')
       .header__footer
         .container
           .row
-            .col-xl-5.col-lg-6.col-md-8.col-sm-11.col-11
+            .col-xl-5.col-lg-6.col-md-8
               .nav
                 a.nav__link.link(href='') Home
                 a.nav__link.link(href='') Blog
                 a.nav__link.link(href='') Gallery
                 a.nav__link.link(href='') Pages
                 a.nav__link.link(href='') Contacts
-            .col-xl-2.offset-xl-5.col-lg-2.offset-lg-4.col-md-2.col-sm-1.col-1.text-right
+            .col-xl-2.offset-xl-5.offset-lg-4.col-lg-2.col-md-4.text-right
               .search
                 i.search__link.link.icon.fa.fa-search(aria-hidden='true')
                 .search__form
@@ -58,11 +78,11 @@ html(lang='en')
       .slider
         .slider__item
           img(src='src/img/ship_slider.png', alt='Slider')
-          h2.slider__title Natural Power
+          p.slider__title Natural Power
           p.slider__text vivamus orci sem, consectetur ut vestibulum.
         .slider__item
           img(src='src/img/ship_slider.png', alt='Slider')
-          h2.slider__title Natural Power
+          p.slider__title Natural Power
           p.slider__text vivamus orci sem, consectetur ut vestibulum.
     // section__features
     section.section__features
@@ -167,7 +187,7 @@ html(lang='en')
     section.post
       .container
         .row
-          .col-xl-6
+          .col-xl-6.col-lg-6.col-md-12.col-sm-12
             h3.post__title
               | Recent Posts
             .post__article
@@ -200,7 +220,7 @@ html(lang='en')
                   a.post__link(href='') Read More
                 h4 Vivamus orci sem, conse tur per ac dui oin vulputate.
                 p Proin vulputate aliquam mi nec hendrerit. Sed entum velit vel ipsum.
-          .col-xl-3
+          .col-xl-3.col-lg-3.col-md-6.col-sm-12
             h3.post__title
               | Accorden
             .post__title__accordeon
@@ -224,12 +244,11 @@ html(lang='en')
               p.post__describe__more(style='display:none')
                 | Sed entum velit vel ipsum bibendum em lacus, itor et aliquam eget, iaculis id lacus. Praesent tudin.
                 | Aiquam eget, iaculis id lacus. Praesent tudin. Ut sem lacus, ttitor putate uam mi nec hendrerit.
-          .col-xl-3
+          .col-xl-3.col-lg-3.col-md-6.col-sm-12
             .post__say
               h3.post__title
                 | What People Say
               .post__comment
-                img(src='src/img/comment.png', alt='post__comment')
                 .post__comment__title
                   h5 Sarah Doe
                   p Ceo, Company.Com
@@ -239,14 +258,14 @@ html(lang='en')
                   | Proin vulputate aliquam mi nec rerit. Sed entum velit vel ipsum bibendum tristique. Ut sem lacus, ttitor putate liquam mi nec hendrerit.
     // development
     section.development
-      .container-fluid
+      .container
         .row
-          .col-6.multiSlider__padding.development__item__header
+          .col-xl-6.multiSlider__padding.development__item__header
             .development__img
               img.development__big(src='src/img/development_big.png', alt='Big')
               img.development__small(src='src/img/development_small.png', alt='Small')
               img.development__keyboard(src='src/img/keyboard.png', alt='Keyboard')
-          .col-6.multiSlider__padding.development__item__section
+          .col-xl-6.multiSlider__padding.development__item__section
             .development__item
               img.development__item__img(src='src/img/fixeble.png', alt='Fixeble')
               h4.development__item__title Fixeble Solution
@@ -385,8 +404,8 @@ html(lang='en')
     section.contacts
       .container
         .row
-          .col-xl-12
-            form.contacts__form.col-xl-6(action='#')
+          .col-xl-12.text-center.d-flex.justify-content-center
+            form.contacts__form(action='#')
               h2.contacts__title Get In Touch
               .contacts__form__group
                 label.contacts__form__label.contacts__form__name Name*
